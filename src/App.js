@@ -5,7 +5,7 @@ import Greet from './components/Greet';
 import Text from './components/text'
 import Com from './components/com';
 import Message from './components/Message';
-import Counter from './components/Counter';
+import Counter1 from './components/Counter1';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
@@ -26,14 +26,50 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
-
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './ClickCounter';
+import HoverCounter from './HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import Counter from './Counter'
+import ComponentC from './components/ComponentC'
+import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 class App extends Component {
   render() { 
     return (
       <div className="App">
+        <PostForm/>
+        {/* <PostList/> */}
 
-        <PortalDemo/>
+        {/* <UserProvider value="sadik">
+          <ComponentC />
+        </UserProvider> */}
 
+        {/* <Counter 
+          render={(count, incrementCount) =>(
+            <ClickCounterTwo count ={count} incrementCount={incrementCount} />
+          )}
+        />
+
+        <Counter 
+          render={(count, incrementCount) =>(
+            <HoverCounterTwo count ={count} incrementCount={incrementCount} />
+          )}
+        /> */}
+
+      {/* <ClickCounterTwo/>
+      <HoverCounterTwo/>
+      <User render={(isLoggedIn) => isLoggedIn ? 'Sadik' : 'Guest'} /> */}
+      {/* <User name={ (isLoggedIn) => isLoggedIn ? 'Sadik' : 'Guest'}  /> */}
+        {/* <ErrorBoundary >
+          <Hero heroName="Batman"/>
+          <Hero heroName="Joker"/>
+        </ErrorBoundary>*/}
+        {/* <PortalDemo/> */}
         {/* <FRParentInput /> */}
       {/* <FocusInput/> */}
       {/* <RefsDemo /> */}
